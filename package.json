@@ -37,6 +37,7 @@
     "gulp-watch": "^4.3.11",
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.0.1",
+    "stream-combiner2": "^1.1.1",
     "stylus-media-queries": "^1.0.0"
   },
   "dependencies": {

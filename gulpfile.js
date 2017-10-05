@@ -12,7 +12,8 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	cache = require('gulp-cache'),
 	debug = require('gulp-debug'),
-	browserSync = require('browser-sync').create();
+	browserSync = require('browser-sync').create(),
+	combiner = require('stream-combiner2').obj;
 
 
 
@@ -20,15 +21,12 @@ var gulp = require('gulp'),
 
 //Compile Stylus files to min.css + vendor + uncss
 gulp.task('styl', function() {
-	return gulp.src('./src/styl/main.styl')
-		.pipe(debug({title:'SRC'}))
-		.pipe(stylus({linenos: false}))
-			.on('error', function(err) {
-				console.log(err.message);
-				this.end();
-			})
-		.pipe(debug({title:'STYLUS'}))
-		.pipe(autoprefixer([
+	return combiner(
+		gulp.src('./src/styl/main.styl'),
+		debug({title:'SRC'}),
+		stylus({linenos: false}),	
+		debug({title:'STYLUS'}),
+		autoprefixer([
 			'Android 2.3',
 			'Android >= 4',
 			'Chrome >= 20',
@@ -37,17 +35,23 @@ gulp.task('styl', function() {
 			'iOS >= 6',
 			'Opera >= 12',
 			'Safari >= 6'
-		]))
-		.pipe(debug({title:'AUTOPREFIXER'}))
-		.pipe(cssmin())
-		.pipe(debug({title:'CSSMIN'}))
-		.pipe(rename({
+		]),
+		debug({title:'AUTOPREFIXER'}),
+		cssmin(),
+		debug({title:'CSSMIN'}),
+		rename({
 			suffix: '.min'
-		}))
-		.pipe(debug({title:'RENAME'}))
-		.pipe(gulp.dest('./src/css/'))
-		.pipe(debug({title:'DESTINATION'}))
-		.pipe(browserSync.reload({stream: true}));
+		}),
+		debug({title:'RENAME'}),
+		gulp.dest('./src/css/'),
+		debug({title:'DESTINATION'}),
+		browserSync.reload({stream: true})
+	).on('error', function(err) {
+		console.log(err.message);
+		this.end();
+	});
+	
+		
 });
 
 
@@ -78,17 +82,16 @@ gulp.task('jsLibs', function () {
 
 // Common js file
 gulp.task('jsCommon', function () {
-	return gulp.src('./src/js/common.js')
-		.pipe(uglify())
-			.on('error', function(err) {
-				console.log(err.message);
-				this.end();
-			})
-		.pipe(rename({
-			suffix: '.min'
-		}))
-		.pipe(gulp.dest('./src/js'))
-		.pipe(browserSync.reload({stream: true}));
+	return combiner (
+		gulp.src('./src/js/common.js'),
+		uglify(),
+		rename({suffix: '.min'}),
+		gulp.dest('./src/js'),
+		browserSync.reload({stream: true})
+	).on('error', function(err) {
+		console.log(err.message);
+		this.end();
+	});	
 });
 
 // Concat all libs css files and libs js files
