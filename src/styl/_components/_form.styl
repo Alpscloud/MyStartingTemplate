@@ -1,0 +1,70 @@
+.form
+	&__input
+		display inline-block
+		width 100%
+		padding 10px 15px
+		text-align left
+		background-color $light-color
+		border 2px solid transparent
+		font 1em $Reg
+		color $text-color
+		&:hover,
+		&:focus
+			border-color $accent-color
+		&::-webkit-input-placeholder
+			text-transform uppercase
+			font 1em $Reg
+			color $text-color
+		&::-moz-placeholder
+			text-transform uppercase
+			font 1em $Reg
+			color $text-color
+		&:-moz-placeholder
+			text-transform uppercase
+			font 1em $Reg
+			color $text-color
+		&:-ms-input-placeholder
+			text-transform uppercase
+			font 1em $Reg
+			color $text-color
+		&--wrapp
+			margin-bottom 15px
+			position relative
+			
+		&.validate
+			border-color red
+			
+.checkbox__label
+	cursor pointer
+	display inline-block
+	font 1em $Reg
+	text-transform uppercase
+	color $text-color
+	input
+		display none
+	span
+		display block
+		margin-left 0
+		width 100%
+		padding-left 25px
+		
+	input + span:before 
+		content ''
+		width 18px
+		height 18px
+		border 1px solid $accent-color
+		border-radius 4px
+		background transparent
+		transition all .25s ease-in-out
+		margin-right 10px
+		position absolute
+		top 50%
+		left 0
+		transform translateY(-50%)
+		
+
+.checkbox__label
+	input:checked + span:before
+		content ''
+		background-color $dark-color
+	
