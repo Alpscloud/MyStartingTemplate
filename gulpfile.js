@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 	pngquant = require('imagemin-pngquant'),
 	uglify = require('gulp-uglify'),
 	cache = require('gulp-cache'),
-	fileinclude = require('gulp-file-include'),
+	rigger = require('gulp-rigger'),
 	debug = require('gulp-debug'),
 	browserSync = require('browser-sync').create(),
 	combiner = require('stream-combiner2').obj;
@@ -57,29 +57,15 @@ gulp.task('styl', function() {
 
 // Html
 
-// gulp.task('fileinclude', function() {
-// 	return combiner(
-// 		gulp.src('./src/index.html')
-// 			.pipe(fileinclude({
-// 				prefix: '@@',
-// 				basepath: '@file'
-// 			}))
-// 			.pipe(gulp.dest('./src/html/'))
 
-// 	).on('error', function(err) {
-// 		console.log(err.message);
-// 		this.end();
-// 	});
-// });
 
-gulp.task('fileinclude', function() {
-  gulp.src('./src/*.html')
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest('./src/html/'));
+gulp.task('rigger', function () {
+  gulp.src('./src/templates/pages/*.html')
+      .pipe(rigger())
+      .pipe(gulp.dest('./src/'));
 });
+
+
 
 
 // Concat + compress + rename css LIBS files
@@ -140,6 +126,7 @@ gulp.task('serve', function() {
 
 // Watch task
 gulp.task('watch', ['serve'], function() {
+	gulp.watch('./src/templates/**/*.html', ['rigger']);
 	gulp.watch('./src/*.html', browserSync.reload);
 	gulp.watch("./src/styl/**/*.styl", ['styl']);
 	gulp.watch("./src/js/common.js", ['jsCommon']);
@@ -154,7 +141,7 @@ gulp.task('watch', ['serve'], function() {
 
 // Moves html file from src folder to APP folder
 gulp.task('htmlBuild', function () {
-	return gulp.src('./src/*.html')
+	return gulp.src('./src/[^templates]*.html')
 		.pipe(gulp.dest('./app/'));
 });
 
