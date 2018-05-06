@@ -11,6 +11,7 @@ var gulp = require('gulp'),
 	pngquant = require('imagemin-pngquant'),
 	uglify = require('gulp-uglify'),
 	cache = require('gulp-cache'),
+	fileinclude = require('gulp-file-include'),
 	debug = require('gulp-debug'),
 	browserSync = require('browser-sync').create(),
 	combiner = require('stream-combiner2').obj;
@@ -54,6 +55,31 @@ gulp.task('styl', function() {
 		
 });
 
+// Html
+
+// gulp.task('fileinclude', function() {
+// 	return combiner(
+// 		gulp.src('./src/index.html')
+// 			.pipe(fileinclude({
+// 				prefix: '@@',
+// 				basepath: '@file'
+// 			}))
+// 			.pipe(gulp.dest('./src/html/'))
+
+// 	).on('error', function(err) {
+// 		console.log(err.message);
+// 		this.end();
+// 	});
+// });
+
+gulp.task('fileinclude', function() {
+  gulp.src('./src/*.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./src/html/'));
+});
 
 
 // Concat + compress + rename css LIBS files
@@ -176,5 +202,5 @@ gulp.task('fontsBuild', function() {
 });
 
 // Start of building
-gulp.task('build', ['htmlBuild', 'jsBuild', 'cssBuild','imageBuild', 'fontsBuild']);
+gulp.task('build', ['htmlBuild', 'jsBuild', 'cssBuild','imgBuild', 'fontsBuild']);
 // ========= ========= ========= ========= ========= 
