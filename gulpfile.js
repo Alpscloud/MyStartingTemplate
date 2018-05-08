@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 	pngquant = require('imagemin-pngquant'),
 	uglify = require('gulp-uglify'),
 	cache = require('gulp-cache'),
-	rigger = require('gulp-rigger'),
+	twig = require('gulp-twig'),
 	debug = require('gulp-debug'),
 	browserSync = require('browser-sync').create(),
 	combiner = require('stream-combiner2').obj;
@@ -57,15 +57,12 @@ gulp.task('styl', function() {
 
 // Html
 
-
-
-gulp.task('rigger', function () {
+gulp.task('twig', function () {
   gulp.src('./src/templates/pages/*.html')
-      .pipe(rigger())
-      .pipe(gulp.dest('./src/'));
+      .pipe(twig())
+      .pipe(gulp.dest('./src/'))
+      .pipe(browserSync.reload({stream: true}));
 });
-
-
 
 
 // Concat + compress + rename css LIBS files
@@ -126,7 +123,8 @@ gulp.task('serve', function() {
 
 // Watch task
 gulp.task('watch', ['serve'], function() {
-	gulp.watch('./src/templates/**/*.html', ['rigger']);
+	gulp.watch('./src/templates/pages/**/*.html', ['twig']);
+	gulp.watch('./src/templates/parts/**/*.html', ['twig']);
 	gulp.watch('./src/*.html', browserSync.reload);
 	gulp.watch("./src/styl/**/*.styl", ['styl']);
 	gulp.watch("./src/js/common.js", ['jsCommon']);
