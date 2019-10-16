@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	//  ========= Variables =========
 	var body = $('body'),
-		html = body.width(),
-		timer; // for disable scroll
+			html = body.width(),
+			timer; // for disable scroll
 	// ========= =========== =========== ===========
 
 	// Disable hover effect when client scrolles the page
@@ -16,5 +16,6 @@ $(document).ready(function() {
 			body.removeClass('disable-hover');
 		}, 200);
 	});
-	
+
+
 });
