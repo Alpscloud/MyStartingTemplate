@@ -11,6 +11,12 @@ vertical-center()
 horisontal-center()
 	left 50%
 	transform translateX(-50%)
+
+flex-col-center()
+	display flex
+	flex-direction column
+	align-items center
+	justify-content center
 //==============================
 
 pseudo()
@@ -44,6 +50,7 @@ webfont(family, folder, file, hack-chrome-windows = false, weight = normal, styl
 				url('../fonts/' + folder + '/' + file + '.svg#'+ family) format('svg')
 		font-weight weight
 		font-style style
+		font-display swap
 		
 	if hack-chrome-windows
 		@media screen and (-webkit-min-device-pixel-ratio:0)
