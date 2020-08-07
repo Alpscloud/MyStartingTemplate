@@ -152,75 +152,140 @@
 	"buffers":
 	[
 		{
-			"file": "src/styl/_customize/_basic.styl",
+			"file": "src/styl/_components/_buttons.styl",
 			"settings":
 			{
-				"buffer_size": 2289,
+				"buffer_size": 2142,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/parts/sections/header.html",
+			"settings":
+			{
+				"buffer_size": 207,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/_customize/_technical/_mixins.styl",
+			"settings":
+			{
+				"buffer_size": 1321,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/_components/form.html",
+			"settings":
+			{
+				"buffer_size": 1163,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/styl/_customize/_grid.styl",
+			"file": "src/templates/parts/head.html",
 			"settings":
 			{
-				"buffer_size": 971,
+				"buffer_size": 1660,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/styl/_customize/_mixins.styl",
+			"file": "src/styl/_customize/_typography/_fonts.styl",
 			"settings":
 			{
-				"buffer_size": 1486,
+				"buffer_size": 1375,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/styl/_customize/_vars.styl",
+			"file": "src/styl/_customize/_technical/_vars.styl",
 			"settings":
 			{
-				"buffer_size": 1120,
+				"buffer_size": 1254,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/js/_components/simple-tabs.js",
+			"file": "src/styl/_customize/_technical/_basic-classes.styl",
 			"settings":
 			{
-				"buffer_size": 400,
+				"buffer_size": 2073,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/js/common.js",
+			"file": "src/styl/_customize/_technical/_basic-tags.styl",
 			"settings":
 			{
-				"buffer_size": 484,
+				"buffer_size": 1103,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/templates/pages/index.html",
-			"settings":
-			{
-				"buffer_size": 419,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "src/styl/main.styl",
 			"settings":
 			{
-				"buffer_size": 153,
+				"buffer_size": 184,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/_libs/_libs.styl",
+			"settings":
+			{
+				"buffer_size": 50,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/styl/_customize/_vars.styl",
+			"settings":
+			{
+				"buffer_size": 1195,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{% include '../parts/head.html' %}\n<body>\n\t\n\t<!-- CONTENT WRAPPER -->\n\t<div class=\"content__wrapper\">\n\n\t\t<!-- Header -->\n\t\t{% include '../parts/sections/header.html' %}\n\t\t<!-- //Header -->\n\n\t\t<!-- Main -->\n\t\t<main class=\"main\">\n\t\t\t<!-- Section promo -->\n\t\t\t<section class=\"sect__promo\">\n\t\t\t\t<h2 class=\"w3c\">&nbsp;</h2>\n\t\t\t</section>\n\t\t\t<!-- //Section promo -->\n\n\t\t\t<!-- Section about -->\n\t\t\t<section class=\"sect__about-us\">\n\t\t\t\t<h2 class=\"w3c\">&nbsp;</h2>\n\t\t\t</section>\n\t\t\t<!-- //Section about -->\n\n\t\t\t<!-- Section advantages -->\n\t\t\t<section class=\"sect__advantages\">\n\t\t\t\t<h2 class=\"w3c\">&nbsp;</h2>\n\t\t\t</section>\n\t\t\t<!-- //Section advantages -->\n\n\t\t\t<!-- Section portfolio -->\n\t\t\t<section class=\"sect__portfolio\">\n\t\t\t\t<h2 class=\"w3c\">&nbsp;</h2>\n\t\t\t</section>\n\t\t\t<!-- //Section portfolio -->\n\n\t\t\t<!-- Section feedbacks -->\n\t\t\t<section class=\"sect__feedbacks\">\n\t\t\t\t<h2 class=\"w3c\">&nbsp;</h2>\n\t\t\t</section>\n\t\t\t<!-- //Section feedbacks -->\n\n\t\t\t<!-- Section contacts -->\n\t\t\t<section class=\"sect__contacts\">\n\t\t\t\t<h2 class=\"w3c\">&nbsp;</h2>\n\t\t\t</section>\n\t\t\t<!-- //Section contacts -->\n\n\n\t\t</main>\n\t\t<!-- //Main -->\n\n\t\t<!-- Footer -->\n\t\t{% include '../parts/sections/footer.html' %}\n\t\t<!-- //Footer -->\n\n\t</div>\n\t<!-- //CONTENT WRAPPER -->\n\n\t{% include '../parts/scripts.html' %}\n\n</body>\n\n</html>",
+			"file": "src/templates/pages/index.html",
+			"file_size": 4911,
+			"file_write_time": 132412716893115993,
+			"settings":
+			{
+				"buffer_size": 1293,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/_components/_pagination.styl",
+			"settings":
+			{
+				"buffer_size": 125,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/styl/_components/_sliders.styl",
+			"settings":
+			{
+				"buffer_size": 424,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -261,21 +326,43 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Projects/MyStartingTemplate",
-		"/D/Projects/MyStartingTemplate/src",
-		"/D/Projects/MyStartingTemplate/src/js",
-		"/D/Projects/MyStartingTemplate/src/js/_components",
-		"/D/Projects/MyStartingTemplate/src/styl",
-		"/D/Projects/MyStartingTemplate/src/styl/_components",
-		"/D/Projects/MyStartingTemplate/src/styl/_customize",
-		"/D/Projects/MyStartingTemplate/src/styl/_pages",
-		"/D/Projects/MyStartingTemplate/src/templates",
-		"/D/Projects/MyStartingTemplate/src/templates/_components",
-		"/D/Projects/MyStartingTemplate/src/templates/pages",
-		"/D/Projects/MyStartingTemplate/src/templates/parts"
+		"/D/Work/Projects/MyStartingTemplate",
+		"/D/Work/Projects/MyStartingTemplate/src",
+		"/D/Work/Projects/MyStartingTemplate/src/styl",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_components",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize/_technical",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_libs",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_pages",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_sections",
+		"/D/Work/Projects/MyStartingTemplate/src/templates",
+		"/D/Work/Projects/MyStartingTemplate/src/templates/pages",
+		"/D/Work/Projects/MyStartingTemplate/src/templates/parts",
+		"/D/Work/Projects/MyStartingTemplate/src/templates/parts/components",
+		"/D/Work/Projects/MyStartingTemplate/src/templates/parts/sections"
 	],
 	"file_history":
 	[
+		"/D/Work/Projects/MyStartingTemplate/src/templates/_components/form.html",
+		"/D/Work/Projects/MyStartingTemplate/src/templates/_components/pagination.html",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize/_technical/_mixins.styl",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize/customize.styl",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_components/_logo.styl",
+		"/D/Work/Projects/antikvariat/_project/src/js/helpers/fancybox.js",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize/_fonts.styl",
+		"/D/Work/Projects/antikvariat/style-rtl.css",
+		"/D/Work/Projects/antikvariat/style.css",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize/_technical/_basic-classes.styl",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize/_technical/_basic-tags.styl",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_components/_form.styl",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize/_technical/_grid.styl",
+		"/D/Work/Projects/MyStartingTemplate/src/templates/_components/go-to-top-button.html",
+		"/D/Work/Projects/MyStartingTemplate/src/templates/_components/popup.html",
+		"/D/Work/Projects/MyStartingTemplate/src/styl/_components/_popups.styl",
+		"/D/Work/Projects/MyStartingTemplate/src/templates/_components/hamburger-button.html",
+		"/D/Projects/MyStartingTemplate/src/templates/parts/head.html",
+		"/D/Projects/MyStartingTemplate/src/templates/parts/blocks/header.html",
+		"/D/Projects/MyStartingTemplate/src/js/_components/simple-tabs.js",
 		"/D/Projects/MyStartingTemplate/src/styl/_components/components.styl",
 		"/D/Projects/MyStartingTemplate/src/styl/_components/_buttons.styl",
 		"/D/Projects/MyStartingTemplate/src/styl/_customize/_fonts.styl",
@@ -383,31 +470,11 @@
 		"/D/Projects/amn-plazma/_project/src/styl/_components/_popups.styl",
 		"/D/Projects/amn-plazma/_project/app/js/quiz.js",
 		"/D/Projects/red-sea/_project/wp/rsa-travel-1562097766-complete-2019-07-20-12-00-09/wp-content/themes/redsea-theme/page-template-thanks.php",
-		"/D/Projects/Kordelia/_project/src/js/helpers/ajax-form-validate.js",
-		"/D/Projects/amn-plazma/_project/src/templates/parts/quiz/quiz-all-minify.html",
-		"/D/Projects/amn-plazma/_project/src/styl/_helpers/_fonts.styl",
-		"/D/Projects/amn-plazma/_project/src/styl/_components/_buttons.styl",
-		"/D/Projects/amn-plazma/_project/src/templates/parts/scripts.html",
-		"/D/Projects/Kordelia/_project/src/js/common.js",
-		"/D/Projects/amn-plazma/_project/src/js/quiz.js",
-		"/D/Projects/amn-plazma/_project/src/templates/parts/results-templates.html",
-		"/D/Projects/amn-plazma/_project/src/templates/parts/quiz-sheet-minify.html",
-		"/D/Projects/amn-plazma/_project/src/templates/parts/quiz-sheet.html",
-		"/D/Projects/artua/_project/src/templates/pages/index.html",
-		"/D/Projects/amn-plazma/_project/src/templates/pages/index.html",
-		"/D/Projects/amn-plazma/_project/src/styl/_blocks/blocks.styl",
-		"/D/Projects/amn-plazma/_project/src/styl/_pages/_page-index.styl",
-		"/D/Projects/amn-plazma/_project/src/styl/_media.styl",
-		"/D/Projects/amn-plazma/_project/src/styl/_helpers/_basic.styl",
-		"/D/Projects/amn-plazma/_project/src/styl/_components/_logo.styl",
-		"/D/Projects/amn-plazma/_project/src/styl/_blocks/_footer.styl",
-		"/D/Projects/amn-plazma/_project/src/templates/parts/footer.html",
-		"/D/Projects/amn-plazma/_project/src/img/icons/svg/phone-symbol-of-an-auricular-inside-a-circle.svg",
-		"/D/Projects/amn-plazma/_project/src/js/common.js"
+		"/D/Projects/Kordelia/_project/src/js/helpers/ajax-form-validate.js"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -421,6 +488,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -438,30 +506,30 @@
 	"folders":
 	[
 		{
-			"path": "D:\\Projects\\MyStartingTemplate"
+			"path": "D:\\Work\\Projects\\MyStartingTemplate"
 		}
 	],
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/styl/_customize/_basic.styl",
+					"file": "src/styl/_components/_buttons.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2289,
+						"buffer_size": 2142,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2289,
-								2289
+								1792,
+								1792
 							]
 						],
 						"settings":
@@ -470,118 +538,32 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2147.0,
+						"translation.y": 1539.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/styl/_customize/_grid.styl",
+					"file": "src/templates/parts/sections/header.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 971,
+						"buffer_size": 207,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								234,
-								234
+								76,
+								76
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 768.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/styl/_customize/_mixins.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1486,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								230,
-								230
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 192.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/styl/_customize/_vars.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1120,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								919,
-								919
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 48.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/js/_components/simple-tabs.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 400,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								400
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -591,49 +573,49 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "src/js/common.js",
+					"buffer": 2,
+					"file": "src/styl/_customize/_technical/_mixins.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 484,
+						"buffer_size": 1321,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								478,
-								478
+								561,
+								561
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 513.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "src/templates/pages/index.html",
-					"semi_transient": false,
+					"buffer": 3,
+					"file": "src/templates/_components/form.html",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 419,
+						"buffer_size": 1163,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								218,
-								218
+								0,
+								0
 							]
 						],
 						"settings":
@@ -645,24 +627,288 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "src/styl/main.styl",
+					"buffer": 4,
+					"file": "src/templates/parts/head.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 153,
+						"buffer_size": 1660,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19,
-								19
+								818,
+								818
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/styl/_customize/_typography/_fonts.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1375,
+								1375
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/styl/_customize/_technical/_vars.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								379,
+								379
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/styl/_customize/_technical/_basic-classes.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1514,
+								1514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1539.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/styl/_customize/_technical/_basic-tags.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1103,
+								1103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/styl/main.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/styl/_libs/_libs.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/styl/_customize/_vars.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								732,
+								732
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/templates/pages/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								819,
+								819
+							],
+							[
+								858,
+								858
+							],
+							[
+								934,
+								934
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 342.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/styl/_components/_pagination.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
 							]
 						],
 						"settings":
@@ -675,13 +921,42 @@
 					},
 					"stack_index": 7,
 					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/styl/_components/_sliders.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								424,
+								424
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -722,7 +997,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":

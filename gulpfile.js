@@ -23,7 +23,9 @@ var gulp = require('gulp'),
 //Compile Stylus files to min.css + vendor + uncss
 gulp.task('styl', function() {
 	return combiner(
-		gulp.src('./src/styl/main.styl'),
+		gulp.src('./src/styl/main.styl').pipe(stylus({
+			'include css': true
+		})),
 		debug({title:'SRC'}),
 		stylus({linenos: false}),	
 		debug({title:'STYLUS'}),
@@ -163,13 +165,13 @@ gulp.task('imgBuild', function () {
 			imagemin.jpegtran({progressive: true}),
 			imageminJpegRecompress({
 			loops: 5,
-			min: 65,
-			max: 70,
-			quality:'medium'
+			min: 75,
+			max: 85,
+			quality:'high'
 		}),
 		imagemin.svgo(),
 		imagemin.optipng({optimizationLevel: 3}),
-		pngquant({quality: '65-70', speed: 5})
+		pngquant({quality: '75-85', speed: 5})
 		],{
 		verbose: true
 		})))
