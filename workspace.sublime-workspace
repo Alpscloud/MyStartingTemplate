@@ -266,7 +266,6 @@
 			"settings":
 			{
 				"buffer_size": 1293,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -331,18 +330,17 @@
 		"/D/Work/Projects/MyStartingTemplate/src/styl",
 		"/D/Work/Projects/MyStartingTemplate/src/styl/_components",
 		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize",
-		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize/_technical",
 		"/D/Work/Projects/MyStartingTemplate/src/styl/_libs",
 		"/D/Work/Projects/MyStartingTemplate/src/styl/_pages",
 		"/D/Work/Projects/MyStartingTemplate/src/styl/_sections",
 		"/D/Work/Projects/MyStartingTemplate/src/templates",
 		"/D/Work/Projects/MyStartingTemplate/src/templates/pages",
-		"/D/Work/Projects/MyStartingTemplate/src/templates/parts",
-		"/D/Work/Projects/MyStartingTemplate/src/templates/parts/components",
-		"/D/Work/Projects/MyStartingTemplate/src/templates/parts/sections"
+		"/D/Work/Projects/MyStartingTemplate/src/templates/parts"
 	],
 	"file_history":
 	[
+		"/C/Users/Пользователь/AppData/Local/Temp/fz3temp-2/header-service.php",
+		"/C/Users/Пользователь/AppData/Local/Temp/fz3temp-2/header.php",
 		"/D/Work/Projects/MyStartingTemplate/src/templates/_components/form.html",
 		"/D/Work/Projects/MyStartingTemplate/src/templates/_components/pagination.html",
 		"/D/Work/Projects/MyStartingTemplate/src/styl/_customize/_technical/_mixins.styl",
@@ -468,13 +466,11 @@
 		"/D/Projects/amn-plazma/_project/src/templates/parts/header.html",
 		"/D/Projects/amn-plazma/_project/src/styl/_helpers/_vars.styl",
 		"/D/Projects/amn-plazma/_project/src/styl/_components/_popups.styl",
-		"/D/Projects/amn-plazma/_project/app/js/quiz.js",
-		"/D/Projects/red-sea/_project/wp/rsa-travel-1562097766-complete-2019-07-20-12-00-09/wp-content/themes/redsea-theme/page-template-thanks.php",
-		"/D/Projects/Kordelia/_project/src/js/helpers/ajax-form-validate.js"
+		"/D/Projects/amn-plazma/_project/app/js/quiz.js"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -488,6 +484,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"nav",
 			"img"
 		],
 		"highlight": true,
